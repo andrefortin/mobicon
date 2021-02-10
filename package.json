@@ -1,19 +1,19 @@
 {
 	"name": "mobicon",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Mobile app icon generator",
 	"license": "MIT",
 	"repository": "SamVerschueren/mobicon",
 	"author": {
 		"name": "Sam Verschueren",
 		"email": "sam.verschueren@gmail.com",
-		"url": "github.com/SamVerschueren"
+		"url": "https://github.com/SamVerschueren"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": ">=8"
 	},
 	"scripts": {
-		"test": "clinton && xo && ava"
+		"test": "jest"
 	},
 	"files": [
 		"index.js",
@@ -27,6 +27,7 @@
 		"generator",
 		"mobicon",
 		"cordova",
+		"chrome",
 		"android",
 		"ios",
 		"blackberry10"
@@ -34,6 +35,7 @@
 	"dependencies": {
 		"android-icon-list": "^1.0.1",
 		"bb10-icon-list": "^1.0.0",
+		"chrome-icon-list": "^1.0.1",
 		"execa": "^1.0.0",
 		"gm": "^1.21.1",
 		"ios-icon-list": "^1.0.0",
@@ -44,10 +46,11 @@
 		"tempy": "^0.3.0"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"clinton": "*",
+		"@types/jest": "^26.0.20",
+		"eslint": "^7.19.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"jest": "^26.6.3",
 		"parse-png": "^1.1.2",
-		"tempfile": "^1.1.1",
-		"xo": "*"
+		"tempfile": "^1.1.1"
 	}
 }
